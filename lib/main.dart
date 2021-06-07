@@ -1,4 +1,5 @@
 import 'package:eght_ours/Package/login_page.dart';
+import 'package:eght_ours/Utils/Routes.dart';
 
 import 'Package/home_page.dart';
 import 'package:flutter/material.dart';
@@ -23,8 +24,8 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
     "/" : (context)=>LoinPage(),
-        "/home_page" : (context)=>HomePage(),
-        "/login_page" : (context)=>LoinPage()
+        Myroutes.homeRoute : (context)=>HomePage(),
+        Myroutes.loginRoute : (context)=>LoinPage()
       },
 
     );
